@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <script src="ender.js"></script>
+        <script src="dc.js"></script>
+        <style>
+            .widget {margin: 1em; padding: 0px; border: solid 1px black; position: relative; overflow: hidden}
+            .main {width: 740px; height: 500px; position: absolute; top: 0px; left: 300px;}
+            .menu {width: 280px; height: 500px; position: absolute; top: 0px; left: 0px;}
+            .menuitem {cursor: pointer}
+            .menuitem.selected {color: #446600;}
+            .fade {
+               transition: opacity .5s ease-in-out;
+               -moz-transition: opacity .5s ease-in-out;
+               -webkit-transition: opacity .5s ease-in-out;
+               -ms-transition: opacity .5s ease-in-out;
+            }
+            ul {
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+            }
+            li {
+                margin: 0px;
+                padding: 0px;
+            }
+            ul>li {
+                font-weight: bold;
+                padding: 5px 0px;
+            }
+            ul>li>ul>li {
+                font-weight: normal;
+                padding: 0px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <div class="debug widget"></div> -->
+        <div class="main widget"></div>
+        <div class="menu widget"></div>
+        <!-- <div class="info widget"></div> -->
+        <script>
+
+        var Application = new DesignCenter();
+
+        $(".main").append(Application.main_view.$el);
+        $(".menu").append(Application.menu_view.$el);
+        Application.selections.add([
+            {
+                url: 'images/kitchen/other/background.png',
+                title: 'Base',
+                category: 'Base',
+                selected: true
+            },
+            {
+                url: 'images/kitchen/hardwood/h4.png',
+                title: 'h4',
+                category: 'Flooring',
+                selected: false
+            },
+            {
+                url: 'images/kitchen/hardwood/h5.png',
+                title: 'h5',
+                category: 'Flooring',
+                selected: false
+            },
+            {
+                url: 'images/kitchen/cupboards/1.png',
+                title: '1',
+                category: 'Cupboards',
+                selected: false
+            },
+            {
+                url: 'images/kitchen/cupboards/16.png',
+                title: '16',
+                category: 'Cupboards',
+                selected: false
+            },
+            {
+                url: 'images/kitchen/cupboards/5.png',
+                title: '5',
+                category: 'Cupboards',
+                selected: false
+            },
+            {
+                url: 'images/kitchen/countertops/dream-1.png',
+                title: 'Dream 1',
+                category: 'Countertops',
+                selected: true
+            },
+            {
+                url: 'images/kitchen/countertops/dream-2.png',
+                title: 'Dream 2',
+                category: 'Countertops',
+                selected: false
+            },
+            {
+                url: 'images/kitchen/countertops/harmony-1.png',
+                title: 'harmony-1.png',
+                category: 'Countertops',
+                selected: false
+            },
+            {
+                url: 'images/kitchen/countertops/g-blackgalaxy.png',
+                title: 'blackgalaxy',
+                category: 'Countertops',
+                selected: false
+            },
+            {
+                url: 'images/kitchen/appliances/black.png',
+                title: 'Black',
+                category: 'Appliances',
+                selected: true
+            },
+            {
+                url: 'images/kitchen/appliances/stainless.png',
+                title: 'Stainless',
+                category: 'Appliances',
+                selected: false
+            },
+            {
+                url: 'images/kitchen/appliances/white.png',
+                title: 'White',
+                category: 'Appliances',
+                selected: false
+            },
+            {
+                url: 'images/kitchen/other/blank.png',
+                title: 'Hide Furniture',
+                category: 'Extras',
+                selected: true
+            },
+            {
+                url: 'images/kitchen/other/furniture.png',
+                title: 'Show Furniture',
+                category: 'Extras',
+                selected: false
+            }
+
+            
+        ]);
+
+        </script>
+    </body>
+</html>
