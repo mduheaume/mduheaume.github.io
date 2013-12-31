@@ -1,7 +1,42 @@
 <html>
-<body>
-<p>
-mikeduheaume.com
-</p>
-</body>
+    <head>
+        <style>
+            body {
+                text-align: center;
+                font-family: Droid Sans, sans-serif;
+            }
+            .links {
+                font-size: .8em;
+                list-style: none; margin: 0px; padding: 0px;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                text-align: left;
+            }
+
+            .links a {
+                text-decoration: none;
+                color: #eee;
+                display: block;
+                padding: .5em;
+                background-color: #aaa;
+                margin-right: 0px;
+                padding-right: 10px;
+                transition: background-color .25s, color .25s, margin .25s, padding .25s;
+            }
+            .links a:hover {
+                background-color: #888;
+                margin-right: -10px;
+                padding-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+            <img src="static/mike.jpg" title="Mike du Heaume">
+            <ul class="links">
+                <li><a href="https://twitter.com/dekim">twitter</a></li>
+                <li><a href="https://github.com/mduheaume">github</a></li>
+                <li><a href="http://www.linkedin.com/in/duheaume">linkedin</a></li>
+            </ul>
+    </body>
 </html>
