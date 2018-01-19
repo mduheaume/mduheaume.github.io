@@ -1,18 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="en"> 
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
         <title>Mike du Heaume</title>
         <style>
+            @import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
             body {
                 text-align: center;
-                font-family: Droid Sans, sans-serif;
+                font-family: 'Cutive Mono', monospace;
             }
             .links {
-                font-size: .8em;
                 list-style: none; margin: 0px; padding: 0px;
                 position: fixed;
                 top: 0px;
                 left: 0px;
                 text-align: left;
+                display: flex;
+                width: 100%;
+            }
+            .links li {
+                flex: 1;
             }
 
             .links a {
@@ -20,24 +28,40 @@
                 color: #eee;
                 display: block;
                 padding: .5em;
-                background-color: #aaa;
+                background-color: rgb(104, 103, 89);
                 margin-right: 0px;
                 padding-right: 10px;
                 transition: background-color .25s, color .25s, margin .25s, padding .25s;
             }
             .links a:hover {
-                background-color: #888;
-                margin-right: -10px;
-                padding-right: 20px;
+                background-color: rgb(100, 44, 0);
+                padding-top: 20px;
             }
+            #main-image {
+                max-width: 100%; 
+                height: auto;
+            }
+
+            #illustration-credit {
+                color: rgb(104, 103, 89);
+                font-size: .8em;
+            }
+            #illustration-credit a {
+                color: rgb(100, 44, 0);
+            }
+            
         </style>
     </head>
     <body>
-            <img src="static/mike.jpg" title="Mike du Heaume">
+            <img src="static/mike.jpg" title="Mike du Heaume" id="main-image">
+            <p id="illustration-credit">
+                Illustration by <a href="https://twitter.com/breakfast_jones">@breakfast_jones</a>.
+            </p>
             <ul class="links">
+                <li><a href="http://mikeduheaume.com">web</a></li>
                 <li><a href="https://twitter.com/dekim">twitter</a></li>
                 <li><a href="https://github.com/mduheaume">github</a></li>
-                <li><a href="http://www.linkedin.com/in/duheaume">linkedin</a></li>
+                <li><a href="https://www.linkedin.com/in/duheaume">linkedin</a></li>
             </ul>
     </body>
 </html>
